@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeiro programa</title>
+    <title>Meu segundo programa</title>
     <style>
         body {
             background-color: rgb(105, 105, 173);
+            /* Comentário */
             color: white;
             font: normal 20pt Arial;
         }
@@ -16,13 +17,14 @@
         }
     </style>
 </head>
+
 <body>
     <h1>Olá, Mundo!</h1>
+    <!-- Isso é um comentário -->
     <p>Já me livrei da maldição</p>
     <script>
-        window.alert('Minha primeira mensagem!') // mensagem de alerta
-        window.confirm('Está gostando de JS?') // Janela com botão pk e Cancel
-        window.prompt('Qual é o seu nome?') // Vai perguntar o nome...
+        var nome = window.prompt('Qual é o seu nome?') // Vai perguntar o nome...
+        window.alert('É um grande prazer em te conhecer, ' + nome + '!') //CONCATENAÇÃO EM JAVASCRPT É IGUAL AO JAVA COM O SIMBOLO DE "+"
     </script>
 </body>
 </html>

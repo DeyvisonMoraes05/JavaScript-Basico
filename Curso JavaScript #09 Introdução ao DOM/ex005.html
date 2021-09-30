@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,11 +14,12 @@
         }
     </style>
 </head>
+
 <body>
     <h1>Iniciando estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
-    <div>clique em mim</div>
+    <div id="msg">clique em mim</div>
     <script>
         /*window.document.write('Olá, Mundo!')
                                             window.document.write(window.document.charset)
@@ -30,6 +32,25 @@
         var corpo = window.document.body
         corpo.style.background = 'black'
         document.write(p1.innerHTML)
+            //window.alert(p1.innerHTML)
+            /*var d = window.document.getElementById('msg')
+            d.style.background = 'green'
+            //d.innerText = 'estou aguardando...'
+            window.document.getElementById('msg').innerText = 'Olá!'*/
+            /*var d = window.document.getElementsByName('msg')[0]
+            d.innerText = 'Olá!'
+
+            window.document.getElementsByClassName('msg')[0]
+            d.innerText = 'teste'*/
+
+        var d = window.document.querySelector('div#msg')
+        d.style.color = 'blue'
+        d.style.background = 'red'
+
+        /*var d = window.document.querySelector('div.msg')
+        d.style.color = 'blue'
+        d.style.background = 'red'*/
     </script>
 </body>
+
 </html>

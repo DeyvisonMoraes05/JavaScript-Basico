@@ -13,6 +13,21 @@
     <input type="button" value="Informar" onclick="informar()">
     <div id="pais">
     </div>
+    <script>
+        function informar() {
+            var txtnomep = window.document.querySelector('input#txtnome')
+                //var nomep = window.document.getElementById('nome')
+            var pais = window.document.querySelector('div#pais')
+                //var pais = window.document.getElementById('pais')
+            var nome = String(txtnomep.value)
+            pais.innerHTML = `Você nasceu no <strong>${nome}</strong>`
+            if (nome == 'Brasil') {
+                pais.innerHTML += `<p>Você é <strong>BRASILEIRO</strong></p>`
+            } else {
+                pais.innerHTML += `<p>Você é <strong>ESTRANGEIRO</strong></p>`
+            }
+        }
+    </script>
 </body>
 
 </html>
